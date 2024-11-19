@@ -226,7 +226,7 @@
     function webAPI_GET(queryString) {
         return new Promise(resolve => {
             $.ajax({
-                url: "http://localhost:5000/api/words" + queryString,
+                url: "https://gem-sprout-hoof.glitch.me/api/words" + queryString,
                 type: 'GET',
                 contentType: 'text/plain',
                 data: {},
