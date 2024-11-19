@@ -190,6 +190,7 @@ function newNewsItem() {
     news.Category = "";
     news.Image = ""
     news.Creation = Date.now()
+    news.Creation += 5 * 60 * 60 * 1000;
     return news;
 }   
 async function renderEditNewsForm(id) {
