@@ -189,7 +189,7 @@ function newNewsItem() {
     news.Text = "";
     news.Category = "";
     news.Image = ""
-    news.Creation = new Date().toISOString();
+    news.Creation = Date.now()
     return news;
 }   
 async function renderEditNewsForm(id) {
@@ -298,7 +298,7 @@ function renderNewsForm(newsItem = null) {
             <input 
                 type="hidden" 
                 name="Creation" 
-                value="${creationDate}"
+                value="${newsItem.Creation}"
             />
             <div class="buttonContainer">
                 <input type="submit" value="${isCreateMode ? 'Créer' : 'Modifier'}" class="btn btn-primary">
