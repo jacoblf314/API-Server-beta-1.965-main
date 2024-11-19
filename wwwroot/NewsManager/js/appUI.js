@@ -268,7 +268,7 @@ function renderNewsForm(newsItem = null) {
     let isCreateMode = newsItem == null; 
     if (isCreateMode) newsItem = newNewsItem(); 
 
-    let creationDate = Date.now() + (5 * 60 * 60 * 1000) 
+    let creationDate = Date.now()
 
     $("#actionTitle").text(isCreateMode ? "Création" : "Modification");
     $("#newsForm").show();
